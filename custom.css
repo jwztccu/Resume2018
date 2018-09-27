@@ -14,7 +14,7 @@
     line-height:24px;
     font: 16px Helvetica, sans-serif;
     background-image: url("/images/bg.jpg");
-    background-color: #9999ff;
+    background-image: linear-gradient(to right, white , purple);
     font-family: 'Quicksand', sans-serif;
   }
   /* hashtag i used to target div with custom id  */
@@ -44,6 +44,53 @@
 
   #pic{float: right;
   margin: -30px 0 0 0;
+  /*  START OF PIC ANIMATION*/
+  <style>
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  .image #pic{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay #pic{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .container:hover .overlay #pic{
+    bottom: 0;
+    height: 100%;
+  }
+
+  .text #pic{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+
+
+  /*  END  OF PIC ANIMATION*/
+
+}
 /* margin parametere are top right bottom left} */
 }
 
@@ -72,7 +119,7 @@
 
 h1{
 color; rgb(20 74 204);
-mrgine: 0 0 16px 0;
+margin: 0 0 16px 0;
 padding: 0 0 16px 0;
 font-size: 42px;
 font-weight: bold;
@@ -124,3 +171,29 @@ img{
     text-alight: center;
   }
 }
+
+
+
+
+
+/* start of background transition test  */
+div class="column side"{
+  background-color: red;
+   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+   animation-name: example;
+   animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+   from {background-color: red;}
+   to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+   from {background-color: red;}
+   to {background-color: yellow;}
+}
+/* end of background transition test  */
