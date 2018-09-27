@@ -1,0 +1,155 @@
+
+/* external style sheet: you cut the css styling from the original html, and pasted it here. you then removed the
+ <style> tags from this css file. you linked this css to the html, so the css is
+ technically there */
+
+ /*  all external and javascript links go into html head, not css*/
+
+
+
+  body {
+    max-width: 1000px;
+    margin: 100px auto;
+    /*  auto means auto adjust,  allows body to always be positioned in the middle, with empty margins on side*/
+    line-height:24px;
+    font: 16px Helvetica, sans-serif;
+    background-image: url("/images/bg.jpg");
+    background-image: linear-gradient(to right, white , purple);
+    font-family: 'Quicksand', sans-serif;
+  }
+  /* hashtag i used to target div with custom id  */
+
+.row{
+  display: flex;
+}
+
+.column{
+  padding: 20px;
+}
+
+
+/*  a column class which also has an additional class side*/
+
+.column.side{
+  flex: 1;
+}
+
+.column.middle{
+  flex: 2;
+}
+
+
+
+
+
+  #pic{float: right;
+  margin: -30px 0 0 0;
+
+
+}
+/* margin parametere are top right bottom left} */
+}
+
+/* overflow
+/*start of test overflow*/
+
+/*end of overflow test*/
+
+/*  animation*/
+
+.spin{
+  margin-right: 20px;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+}
+
+@keyframes spin{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+h1{
+color; rgb(20 74 204);
+margin: 0 0 16px 0;
+padding: 0 0 16px 0;
+font-size: 42px;
+font-weight: bold;
+letter-spacing:-2px;
+border-bottom: 1px solid #999
+ background-color: green;
+/* can choose colors by searching adobe color */
+
+}
+a{
+color: rgb(255, 209, 59);
+border-bottom:1px dotted;
+text-decoration: none;
+background-color: #b3b3e6;
+}
+
+a:hover{
+  border-bottom-style: solid;
+  color: purple
+  background-color: red;
+}
+
+a:visited
+{color: teal
+  background-color: yellow;
+}
+
+
+ul{
+  margin:0 0 32px 17px;
+}
+
+
+li{
+  color: rgb(6, 204, 163);
+}
+
+/*  when view port of device becomes 600 pixels or less ){*/
+@media (max-width: 600px){
+  /*change flex direction to column*/
+.row {
+  flex-direction:column;
+}
+
+img{
+  display: none;
+}
+  #title{
+    text-alight: center;
+  }
+}
+
+
+
+
+
+/* start of background transition test  */
+div class="column side"{
+  background-color: red;
+   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+   animation-name: example;
+   animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+   from {background-color: red;}
+   to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+   from {background-color: red;}
+   to {background-color: yellow;}
+}
+/* end of background transition test  */
