@@ -47,10 +47,10 @@ border-color: #f1f1f1;
 
 
 
-/*  start CSS FOR parralax*/
+/*  START CSS FOR PARALLAX*/
 .parallax {
     /* The image used */
-    background-image: url('images/carousel/flower2.gif');
+    background-image: url('images/Carousel/flower2.gif');
 
 
 
@@ -70,4 +70,4 @@ border-color: #f1f1f1;
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
 
-/*  end CSS FOR parralax*/
+/*  END CSS FOR PARALLAX*/
