@@ -47,7 +47,7 @@ border-color: #f1f1f1;
 
 
 
-/*  START CSS FOR PARALLAX*/
+/*  START CSS FOR PARALLAX - url images must be in double quotes*/
 .parallax {
     /* The image used */
     background-image: url("images/Carousel/flower2.gif");
